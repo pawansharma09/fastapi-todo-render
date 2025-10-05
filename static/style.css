@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #343a40;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.todos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-info {
+    flex: 1;
+}
+
+.todo-info h3 {
+    margin: 0 0 5px 0;
+    color: #212529;
+}
+
+.todo-info p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.completed h3, .completed p {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.actions button {
+    width: auto;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
