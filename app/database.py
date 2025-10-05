@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = os.environ.get("DATABASE_URL")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://fastapi_db_348f_user:wGIXTsQua15wI6mfCk81LAUvN43iYQ4A@dpg-d3h0nvu3jp1c73f4p93g-a/fastapi_db_348f")
 if not DATABASE_URL:
     raise RuntimeError("DATABASE_URL is required!")
 
@@ -23,4 +23,5 @@ def get_db():
     try:
         yield db
     finally:
+
         db.close()
